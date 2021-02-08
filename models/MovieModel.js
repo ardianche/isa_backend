@@ -7,7 +7,7 @@ const id = crypto.randomBytes(16).toString("hex");
 
 
 const MovieModel = new Schema({
-    uuid : {type : String, required: false, default: id},
+    uuid : {type : String, required: false},
     title : {type: String, required:false},
     description : {type: String, required:false},
     cast: {type: Array, required:false}

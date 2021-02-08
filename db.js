@@ -10,6 +10,8 @@ const {
 
 const url = `mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@${MONGO_HOSTNAME}:${MONGO_PORT}/${MONGO_DB}?authSource=admin`;
 
+console.log('DB URL : ',url);
+
 const options = {
     useNewUrlParser: true,
     reconnectTries: Number.MAX_VALUE,

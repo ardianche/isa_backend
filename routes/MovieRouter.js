@@ -2,12 +2,12 @@ const router = require('express').Router();
 const movie = require('../controllers/MovieController');
 
 
-router.get('/', (req,res) => {
-    //Retrieve movies
+router.get('/:title?', (req,res) => {
+    movie.retrieveMovies(req,res);
 });
 
 router.post('/', (req,res) => {
-    //Create movie
+    movie.createMovie(req,res);
 });
 
 router.put('/', (req,res) => {

@@ -2,12 +2,12 @@ const router = require('express').Router();
 const actor = require('../controllers/ActorController');
 
 
-router.get('/', (req,res) => {
-    //Retrieve Actors
+router.get('/:actor?', (req,res) => {
+    actor.retrieveActors(req,res);
 });
 
 router.post('/', (req,res) => {
-    //Create Actor
+    actor.createActor(req,res);
 });
 
 router.put('/', (req,res) => {
