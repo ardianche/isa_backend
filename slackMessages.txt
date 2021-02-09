@@ -1,0 +1,2 @@
+{"channel":"C01MEM3FDQV","text":"thisIsMySecondMessage 22"}
+{"channel":"C01MEM3FDQV","text":"This is my third"}
